@@ -5,8 +5,4 @@
     <AssemblyName>Knapcode.Unterpolate</AssemblyName>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
-
 </Project>
