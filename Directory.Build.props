@@ -1,7 +1,7 @@
 <Project>
   
   <PropertyGroup>
-    <RootNamespace>Knapcode.Unterpolate</RootNamespace>
+    <RootNamespace Condition="'$(RootNamespace)' == ''">Knapcode.Unterpolate</RootNamespace>
     
     <Authors>Joel Verhagen</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

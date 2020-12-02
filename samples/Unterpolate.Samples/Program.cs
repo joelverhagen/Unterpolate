@@ -22,6 +22,7 @@ namespace Knapcode.Unterpolate.Samples
 
         private static void ShowStringInterpolation()
         {
+            #region ShowStringInterpolation
             var first = "quick";
             var second = "lazy";
 
@@ -33,10 +34,12 @@ namespace Knapcode.Unterpolate.Samples
 
             var result = Extractor.Extract(input, format);
             Console.WriteLine("  Data:     " + JsonConvert.SerializeObject(result.NameToValue));
+            #endregion
         }
 
         private static void ShowStringFormat()
         {
+            #region ShowStringFormat
             var input = "The quick brown fox jumps over the lazy dog";
             var format = "The {0} brown fox jumps over the {1} dog";
             Console.WriteLine("  Input:    " + input);
@@ -49,6 +52,7 @@ namespace Knapcode.Unterpolate.Samples
             Console.WriteLine("  Data:     " + JsonConvert.SerializeObject(result.NameToValue));
             Console.WriteLine("  Same:     " + string.Format(CultureInfo.InvariantCulture, format, paramArray));
             Console.WriteLine("  Reversed: " + string.Format(CultureInfo.InvariantCulture, format, reversed));
+            #endregion
         }
     }
 }
